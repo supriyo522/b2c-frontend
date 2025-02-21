@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.logo-img {
+    /* height: 80px; */
+    width: 100px;
+    padding-top: 10px;
+}
+.learn-hero-text{
+    font-size: 27px !important;
+}
+.main-heading {
+    padding-top: 80px !important;
+}
+
+.dropdown-icon {
+    height: 70px;
+}
+
+/* .dropdown-menu {
+    min-width: 280% !important;
+} */
+
+.dropdown-text {
+    font-size: 15px;
+}
+
+#carouselExampleIndicators {
+    /* height: 70vh; */
+
+}
+
+.carousel-inner {
+    height:100%;
+
+}
+
+.card-sec {
+    /* margin-top: 100px; */
+    margin-bottom: 100px;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card1 {
+    background-color: rgb(158, 15, 65);
+    color: white;
+}
+
+.card1:hover {
+    background-color: rgb(99, 17, 46);
+    color: white;
+    cursor: pointer;
+}
+
+.card2 {
+    background-color: rgb(85, 72, 137);
+    color: white;
+}
+
+.card2:hover {
+    background-color: rgb(99, 17, 46);
+    color: white;
+    cursor: pointer;
+}
+
+.card3 {
+    background-color: rgb(184, 104, 11);
+    color: white;
+}
+
+.card3:hover {
+    background-color: rgb(99, 17, 46);
+    color: white;
+    cursor: pointer;
+}
+
+/* li{
+    list-style: none;
+} */
+.card-text {
+    font-size: 13px;
+}
+
+/* .background-img{
+    height: 700px;
+    width: auto;
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.after-school-learn {
+    font-size: 13px;
+}
+
+.plus-text {
+    font-weight: bolder;
+}
+
+#resultcolor {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.experiment-color {
+    font-size: 45px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: #545151;
+    background-image: linear-gradient(to right, rgb(227, 227, 185), rgb(245, 240, 93), rgb(255, 248, 56));
+    /* background-image: linear-gradient(to right, blue, indigo, violet); */
+}
+
+.youtube-btn-font {
+    font-size: 12px;
+}
+
+.small-text {
+    font-size: 12px;
+    line-height: 25px;
+
+}
+
+.icon-set {
+    height: 80px;
+    box-shadow: 0px 8px 8px 0.2px;
+}
+
+.icon-set:hover {
+    transform: translateY(-12px);
+    transition: transform 0.3s;
+}
+
+.hero-text {
+    /* font-size: 27px;
+    line-height: 45px;
+    
+    color: rgb(71, 70, 70);
+    font-weight: bolder; */
+    /* font-family: 'Domine', "cursive"; */
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    /* text-transform: uppercase; */
+    font-weight: 100;
+
+    margin-top: 50px !important;
+    text-align: center;
+    margin: auto;
+}
+
+.icon-circle {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+.icon-circle-learn {
+    height: 8rem;
+    width: auto !important;
+}
+
+.icon-circle:hover {
+    transition: transform 0.3s;
+    transform: translateY(-15px);
+}
+
+.back-section-about-eec-learning {
+
+    background: #ffffff;
+    text-align: center;
+    margin: auto;
+    height: 70vh;
+    width: 100%;
+    background: cover;
+    background-repeat: no-repeat;
+}
+
+.pyramid-sec {
+    /* background-color: #dadada; */
+    /* background: #d5c629; */
+    background: #ffea11;
+}
+
+.pyramid-back {
+    /* background-color: #71399E; */
+    /* background-color: #FFB33C; */
+    background: #ffa313;
+}
+
+.icon-circle-vdo {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+.form-control{
+    justify-content: space-evenly;
+}
+.icon-circle-vdo:hover {
+    transition: transform 0.9s;
+    transform: translateY(-30px);
+}
+
+.play-btn {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin-top: -40px;
+
+}
+
+.bi-play-circle {
+    color: green;
+    font-size: 35px;
+}
+
+.background-review {
+    background-color: #7bb315;
+}
+
+.background-after-school {
+    background: #bdad06;
+}
+
+/************************************************ About Page start here ***************************/
+.about-hero-image {
+    background-image: url(img/about-hero-img-sec.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    /* padding: 100px 0; */
+    color: white;
+    text-align: center;
+}
+
+.hero-sec-head {
+    margin-top: 10rem;
+    color: #545151;
+    font-size: 46px;
+}
+
+.vision-text {
+    font-size: 54px;
+    line-height: 65px;
+    font-weight: 900;
+    letter-spacing: 2px;
+   
+    margin: 22px 0px 0px 0px!important;
+}
+.vision-para{
+    font-size: 16px;
+    line-height: 30px;
+ 
+}
+p.lowercase {
+    text-transform: lowercase;
+}
+.under-line{
+    height:3px;
+    width: 80px;
+    background-color: #ffa313;
+}
+
+/************************** Resources page start here********************/
+.contact-form {
+    /* background-image: url(img/form2.jpg);
+    height: 92vh; */
+  
+    background: #153ab36b;
+    /* background:  linear-gradient(to right, rgb(233, 218, 229), rgba(36, 123, 142, 0.432), rgb(207, 201, 39));; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: white; */
+    /* text-align: center; */
+    padding-top: 50px;
+}
+
+
+@media(max-width:767px) {
+    .hero-text {
+        padding: 10px;
+    }
+
+    /* .sr-only{
+        display: none;
+    }
+    .carousel-inner{
+        padding-bottom: 0px;
+    } */
+    #carouselExampleIndicators {
+        height: 25vh;
+
+    }
+
+    .hero-text {
+        font-size: 20px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: rgb(79 47 47);
+        margin-top: 75px !important;
+      
+        text-align: center;
+        margin: auto;
+    }
+
+    .dropdown-menu {
+        min-width: 90% !important;
+    }
+
+    .dropdown-text {
+        font-size: 13px;
+        padding: 14px 0px 15px 0px !important;
+    }
+
+    .dropdown-icon {
+        height: 40px;
+    }
+
+    /*******About sec*********/
+    .about-hero-image {
+        height: 98vh;
+    }
+
+    .hero-sec-head {
+        margin-top: 2rem;
+        font-size: 30px;
+    }
+    .vision-text {
+        font-size: 42px;
+    }
+}
+/******************* carrier page ***************/
+.form-check-input{
+    height: 20px ;
+    width: 20px;
+    padding: 0px 10px !important;
+}
+.form-check-label {
+    margin-bottom: 0;
+    padding: 3px 10px;
+}

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+    <title>EEC Registration</title>
+    <style>
+        body {
+            height: 100vh;
+            margin-top: 0px !important;
+            padding: 0;
+            /* background: rgb(0, 0, 0); */
+            /* font-family: 'Comic Sans MS',  sans-serif; */
+            background: url('reg-f.png') no-repeat center center fixed;
+            background-size: cover;
+            /* Ensures the image covers the entire background */
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .animate-bounce {
+            /* color: #000; */
+            color: rgb(0, 2, 3);
+            font-family: "Sofadi One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            padding: 15px !important;
+
+        }
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin-top: 130px !important;
+            color: rgb(33, 16, 236);
+            letter-spacing: 1px;
+        }
+
+        .registration-box {
+            width: 90%;
+            margin: auto;
+        }
+        .sub-para{
+    /* color: #fff; */
+    color: #a31bae;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: -18px;
+    /* font-family: 'Lucida Sans'; */
+}
+    
+        /* .container{
+    margin-top: 300px;
+} */
+    </style>
+</head>
+
+<body>
+
+    <h3 class="animate-bounce text-center my-5">Unlock your potential with our innovative app, designed to nurture every
+        student's growth, success, and lifelong learning for a brighter future.</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12"></div>
+            <div class="col-md-4 col-sm-12">
+                <div class="registration-box my-5">
+                    <form id="registrationForm">
+                        <div class="my-4">
+                            <input type="text" id="name" class="form-control animate-fade-in" placeholder="Student name" required>
+                        </div>
+                        <div class="my-4">
+                            <input type="text" id="gender" class="form-control animate-fade-in" placeholder="Gender" required>
+                        </div>
+                        <div class="my-4">
+                            <input type="text" id="class" class="form-control animate-fade-in" placeholder="Class" required>
+                        </div>
+                        <div class="my-4">
+                            <input type="text" id="school" class="form-control animate-fade-in" placeholder="School Name" required>
+                        </div>
+
+                        <div class="accordion my-4" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        For More Student....
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="my-4">
+                                            <input type="text" id="name2" class="form-control animate-fade-in" placeholder="2nd Student name">
+                                        </div>
+                                        <div class="my-4">
+                                            <input type="text" id="gender2" class="form-control animate-fade-in" placeholder="Gender">
+                                        </div>
+                                        <div class="my-4">
+                                            <input type="text" id="class2" class="form-control animate-fade-in" placeholder="Class">
+                                        </div>
+                                        <div class="my-4">
+                                            <input type="text" id="school2" class="form-control animate-fade-in" placeholder="School Name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-info w-100 animate-slide-in">Register</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript for handling form submission -->
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const name = document.getElementById('name').value;
+            const gender = document.getElementById('gender').value;
+            const classValue = document.getElementById('class').value;
+            const school = document.getElementById('school').value;
+
+            const additionalStudents = [
+                {
+                    name: document.getElementById('name2')?.value,
+                    gender: document.getElementById('gender2')?.value,
+                    class: document.getElementById('class2')?.value,
+                    school: document.getElementById('school2')?.value
+                }
+            ].filter(student => student.name && student.gender && student.class && student.school);
+
+            try {
+                const response = await fetch('https://eec-kid-backend.onrender.com/api/registration2/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name, gender, class: classValue, school, additionalStudents })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                alert('Registration successful!');
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

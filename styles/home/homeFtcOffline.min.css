@@ -1,0 +1,269 @@
+.modal-ftc-open {
+    overflow: hidden;
+    position: fixed
+}
+
+.ftc-date-field-note {
+    margin-top: -24px !important;
+    color: rgba(112, 112, 112, .6)
+}
+
+.modal-ftc-step-1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: auto;
+    background: rgb(34 33 33 / 66%)
+}
+
+.modal-step-1-header {
+    font-size: 16px;
+    display: flex;
+    justify-content: left;
+    font-weight: 450
+}
+
+.modal-dialog-ftc-step-1 {
+    position: relative;
+    width: auto;
+    margin: 10px
+}
+
+.modal-content-ftc-step-1 {
+    margin-top: 50px;
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%)
+}
+
+.modal-header .close {
+    margin-top: -2px
+}
+
+.modal-header-ftc {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: left
+}
+
+.modal-title-ftc {
+    color: #000;
+    font-size: 24px;
+    display: flex;
+    padding-left: 20px
+}
+
+.modal-body-ftc {
+    color: #000;
+    position: relative;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px
+}
+
+.modal-ftc-date-style {
+    line-height: 13.5px !important
+}
+
+.modal-footer-ftc {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5
+}
+
+.modal-title {
+    line-height: 1.42857143
+}
+
+.modal-header-ftc {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.col-ftc {
+    float: left;
+    width: 48%;
+    margin: 5px
+}
+
+.caution-text {
+    color: #8e0c99;
+    margin-top: 0;
+    display: flex;
+    font-size: 12px;
+    text-align: left
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    content: url(assets/icon/chevron-down-circle-outline.svg)
+}
+
+@media (min-width:768px) {
+    .modal-dialog-ftc-step-1 {
+        width: 600px;
+        margin: 30px auto
+    }
+}
+
+@media (max-width:768px) {
+    .col-ftc {
+        width: 98%
+    }
+    .ftc-offline-modal-back {
+        width: 40px !important
+    }
+    .modal-title-ftc {
+        font-size: 23px;
+        padding-left: 13px
+    }
+    .book-now-btn {
+        font-size: 17px !important
+    }
+}
+
+.modal-ftc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: auto;
+    background: rgb(34 33 33 / 66%)
+}
+
+.modal-dialog-ftc-thanku {
+    position: relative;
+    width: auto;
+    margin: 10px;
+    display: flex;
+    justify-content: center
+}
+
+.modal-content-ftc-thanku {
+    margin-top: 50px;
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%)
+}
+
+.violet-capsule {
+    background-color: #f1edff;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 24px;
+    margin-bottom: 16px;
+    margin-top: 16px
+}
+
+.ftc-offline-close-popup {
+    border: transparent;
+    background: 0 0
+}
+
+.ftc-offline-modal-back {
+    width: 50px
+}
+
+.ftc-thanku-close-popup {
+    text-align: right;
+    padding: 20px
+}
+
+.ftc-thanku-popup-close {
+    font-size: 23px
+}
+
+.modal-body-ftc-thanku {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto
+}
+
+.image-capsule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+.success-tick {
+    width: 30%
+}
+
+.students {
+    width: 30%
+}
+
+.row-1-text {
+    font-size: 22px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit
+}
+
+.row-2-text {
+    color: #8c69ff !important;
+    padding: 11px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1
+}
+
+.row-3-text {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit
+}
+
+.row-4-text {
+    color: #67ac5b;
+    margin-bottom: 33px
+}
+
+.exclam {
+    width: 19px;
+    margin-right: 10px;
+    margin-left: -12px
+}
+
+@media (max-width:500px) {
+    .modal-dialog {
+        padding-top: 0 !important
+    }
+    .modal-content-ftc-step-1 {
+        margin-top: 0
+    }
+}

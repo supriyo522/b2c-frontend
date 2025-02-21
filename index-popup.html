@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Registration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="registration-box">
+            <h1 class="animate-bounce">We're coming soon to shape tomorrow's leaders!</h1>
+            <!-- <p class="registration-para">Ready to explore a world of fun learning? Join EEC and make every day an adventure!</p> -->
+            <form id="registrationForm">
+                <input type="text" id="name" placeholder="Enter your name" required class="animate-fade-in">
+                <input type="text" id="mobileNo" placeholder="Mobile No" required class="animate-fade-in">
+                <input type="email" id="email" placeholder="Enter your email" required class="animate-fade-in">
+                <input type="text" id="billNumber" placeholder="Your Bill Number" required class="animate-fade-in">
+                <button type="submit" class="animate-slide-in">Register</button>
+            </form>
+            <p id="responseMessage"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
