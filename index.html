@@ -23,6 +23,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+        <!-- Ensure Bootstrap JS is included -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     
    <link rel="preload stylesheet" href="frontpagestyle.css">
@@ -87,8 +90,8 @@
 };
 
     </script>
-  <div class="container-wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-sec">
+<div class="container-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <!-- Brand Logo -->
             <a class="navbar-brand" href="#">
@@ -96,42 +99,39 @@
             </a>
 
             <!-- Toggle button for mobile view -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                                           <!-- Dropdown for Contact Us -->
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    
+                    <!-- Dropdown EEC -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink1" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                           EEC
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                        <a class="nav-link dropdown-toggle" href="#" id="eecDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EEC</a>
+                        <ul class="dropdown-menu" aria-labelledby="eecDropdown">
                             <li><a class="dropdown-item" href="analytic.html">Unlock precise analytics</a></li>
                             <li><a class="dropdown-item" href="ai.html">AI Engine guides</a></li>
                             <li><a class="dropdown-item" href="product_adv.html">Product Advantages</a></li>
-                            <li><a class="dropdown-item" href="tollered.html">Tailored Content for cognitive needs</a></li>
-                            <li><a class="dropdown-item" href="e-learn-well.html"> Enhance learning, elevate well-being</a></li>
-                            <li><a class="dropdown-item" href="aim.html">  Aims to provide best solution</a></li>
+                            <li><a class="dropdown-item" href="tollered.html">Tailored Content</a></li>
+                            <li><a class="dropdown-item" href="e-learn-well.html">Enhance learning</a></li>
+                            <li><a class="dropdown-item" href="aim.html">Best Solutions</a></li>
                         </ul>
                     </li>
 
-                    <!-- Dropdown for Contact Us -->
+                    <!-- Dropdown Contact Us -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            Contact Us
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
                             <li><a class="dropdown-item" href="career2.html">Career</a></li>
                             <li><a class="dropdown-item" href="press.html">Press</a></li>
                             <li><a class="dropdown-item" href="office.html">Office</a></li>
                         </ul>
                     </li>
 
-                    <!-- Other links -->
+                    <!-- Other Links -->
                     <li class="nav-item"><a class="nav-link" href="learn&revise.html">Learn & Revise</a></li>
                     <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
@@ -156,6 +156,23 @@
         </div>
     </nav>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var navbarToggler = document.querySelector(".navbar-toggler");
+        var navbarCollapse = document.querySelector("#navbarNav");
+
+        navbarToggler.addEventListener("click", function() {
+            if (navbarCollapse.classList.contains("show")) {
+                navbarCollapse.classList.remove("show");
+            } else {
+                navbarCollapse.classList.add("show");
+            }
+        });
+    });
+</script>
+
+
       
         <section id="geo-country-selection-popup" class="geo-country-selection-popup hidden" data-country-popup-strip
             data-geo-selection-popup>

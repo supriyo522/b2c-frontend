@@ -440,6 +440,7 @@
             font-size: 12px;
             padding-top: 40px
         }
+
 /* Style for Navbar Links */
 .navbar .nav-item .nav-link {
     color: #333;
@@ -452,9 +453,9 @@
 
 /* Style for Dropdown Menus */
 .navbar .dropdown-menu {
-    display: none; /* Initially hidden */
+    display: none; 
     opacity: 0;
-    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    transition: opacity 0.3s ease; 
     margin-top: 0;
 }
 
@@ -477,8 +478,11 @@
 .list-unstyled {
     color: #fff;
 }
+
+
+
 /* Toggle Button (for mobile view) */
-.navbar-toggler {
+.navbar-toggler-icon {
     border: none;
 }
         .universal-footer-section a {
