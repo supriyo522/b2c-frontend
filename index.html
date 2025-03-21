@@ -26,6 +26,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
         <!-- Ensure Bootstrap JS is included -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
 
     
    <link rel="preload stylesheet" href="frontpagestyle.css">
@@ -38,6 +39,74 @@
     <link href="styles/home/homeFtcOffline.min.css" rel="preload stylesheet" as='style'>
     <link href="styles/trial-form-v4.css" rel="preload stylesheet" as='style'>
   <style>
+/* Top Bar Styling */
+/* Topbar container */
+.topbar {
+    display: flex;
+    justify-content: space-between; /* Ensures both sides are spaced */
+    align-items: center;
+    background-color: #813588;
+    color: black;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Left scrolling section */
+.left-scroll {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+/* Scrolling effect for text */
+.scroll-content {
+    display: inline-block;
+    animation: scrollText 8s linear infinite;
+}
+
+/* Right social media section */
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between icons */
+}
+
+/* Social media icons */
+.right a img {
+    width: 24px; /* Ensures icons have a consistent size */
+    height: auto;
+   
+    transition: transform 0.3s ease-in-out;
+}
+
+.right a img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Divider Styling */
+.divider {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Scrolling Animation */
+@keyframes scrollText {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Hide scrollbar */
+.left-scroll::-webkit-scrollbar {
+    display: none;
+}
+
 
   </style>
 
@@ -90,25 +159,44 @@
 };
 
     </script>
+
+<div class="topbar">
+    <!-- Left scrolling text -->
+    <div class="left-scroll">
+        <div class="scroll-content">
+            <i class="fas fa-mobile-alt"></i>
+            <span> +91 9830590929</span>
+            <span class="divider">|</span>
+            <i class="fas fa-envelope"></i>
+            <span> eec@electroniceducare.com</span>
+        </div>
+    </div>
+
+    <!-- Right social media icons -->
+    <div class="right">
+        <a href="#"><img src="img/facebook-white-icon.png" alt="Facebook" width="24"></a>
+        <a href="#"><img src="img/linkedin-white-icon.png" alt="LinkedIn" width="24"></a>
+    </div>
+</div>
+
 <div class="container-wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-sec">
         <div class="container">
-            <!-- Brand Logo -->
+            
             <a class="navbar-brand" href="#">
                 <img class="logo-img" src="img/logo_eec.png" alt="logo">
             </a>
 
-            <!-- Toggle button for mobile view -->
+           
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     
-                    <!-- Dropdown EEC -->
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="eecDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EEC</a>
                         <ul class="dropdown-menu" aria-labelledby="eecDropdown">
@@ -121,7 +209,7 @@
                         </ul>
                     </li>
 
-                    <!-- Dropdown Contact Us -->
+                   
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
                         <ul class="dropdown-menu" aria-labelledby="contactDropdown">
@@ -131,15 +219,15 @@
                         </ul>
                     </li>
 
-                    <!-- Other Links -->
+                    
                     <li class="nav-item"><a class="nav-link" href="learn&revise.html">Boards</a></li>
                     <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="marketing.html">Marketing</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="resources.html">Language</a></li> -->
+
                 </ul>
 
-                <!-- Right-aligned buttons -->
+
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link">

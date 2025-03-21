@@ -1,0 +1,64 @@
+/* Top Bar Container */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffee0a;
+    color: black;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Left Side (Scrolling Effect) */
+.left-scroll {
+    flex: 1;
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.scroll-content {
+    display: inline-block;
+    animation: scrollText 8s linear infinite;
+}
+
+/* Right Side (Fixed Icons) */
+.right {
+    display: flex;
+    align-items: center;
+}
+
+/* Divider Styling */
+.divider {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Icons Styling */
+.icon-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.icon-link:hover {
+    color: blue;
+}
+
+/* Scrolling Animation */
+@keyframes scrollText {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Hide scrollbar */
+.left-scroll::-webkit-scrollbar {
+    display: none;
+}
