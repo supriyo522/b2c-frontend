@@ -29,6 +29,14 @@
         .hero h1 {
             font-size: 3rem;
         }
+        .accordion-body ul {
+    list-style-type: disc;
+    padding-left: 20px; /* ensures bullets are indented nicely */
+  }
+
+        .accordion-body li {
+  font-weight: bold;
+}
 
         @media (max-width: 768px) {
             .hero h1 {
@@ -66,21 +74,27 @@
                                           </div>
                                         </div>
                                         <div class="accordion-item">
-                                          <h2 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                            <h4>Why Partner with EEC?</h4>
-                                            </button>
-                                          </h2>
-                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                            <h5>EEC offers an exclusive marketplace designed for vendors and businesses catering to the education sector. By joining us, you gain access to a ready-made audience of students and parents actively looking for school supplies, stationery, books, and learning tools. Unlike traditional e-commerce platforms, EEC connects you directly with students, making it easier for them to discover and purchase the resources they need.</h5>
-                                            <p>Direct Access to Students & Parents – Sell without the clutter of general marketplaces.</p>
-                                            <p>Zero Wasted Marketing Spend – Target an audience already searching for your products.</p>
-                                            <p> Loyalty-Driven Sales – Students redeem reward points earned through learning, increasing conversions.</p>
-                                            <p>Seamless Integration – List products, manage inventory, and process orders effortlessly.</p>
+                                            <h2 class="accordion-header" id="headingTwo">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <h4>Why Partner with EEC?</h4>
+                                              </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                              <div class="accordion-body">
+                                                <h5>
+                                                  EEC offers an exclusive marketplace designed for vendors and businesses catering to the education sector. By joining us, you gain access to a ready-made audience of students and parents actively looking for school supplies, stationery, books, and learning tools. Unlike traditional e-commerce platforms, EEC connects you directly with students, making it easier for them to discover and purchase the resources they need.
+                                                </h5>
+                                          
+                                                <ul >
+                                                  <li><strong>Direct Access to Students & Parents</strong> – Sell without the clutter of general marketplaces.</li>
+                                                  <li><strong>Zero Wasted Marketing Spend</strong> – Target an audience already searching for your products.</li>
+                                                  <li><strong>Loyalty-Driven Sales</strong> – Students redeem reward points earned through learning, increasing conversions.</li>
+                                                  <li><strong>Seamless Integration</strong> – List products, manage inventory, and process orders effortlessly.</li>
+                                                </ul>
+                                              </div>
                                             </div>
                                           </div>
-                                        </div>
+                                          
                                         <div class="accordion-item">
                                           <h2 class="accordion-header" id="headingThree">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -90,11 +104,14 @@
                                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                              <h5>We welcome vendors and businesses offering:</h5>
-                                             <p>tationery & School Supplies (Pens, notebooks, art kits, etc.)</p>
-                                             <p> Books & Learning Materials (Textbooks, guides, digital content, etc.)</p>
-                                             <p>School Accessories (Bags, uniforms, water bottles, etc.)</p>
-                                             <p>School Accessories (Bags, uniforms, water bottles, etc.)</p>
-                                             <h6>If your business serves students, EEC is the ideal platform to scale your reach and grow your brand.</h6>
+                                            <ul>
+                                             <li><strong>Stationery & School Supplies </strong>(Pens, notebooks, art kits, etc.)</li>
+                                             <li><strong> Books & Learning Materials </strong>(Textbooks, guides, digital content, etc.)</li>
+                                             <li><strong>School Accessories</strong> (Bags, uniforms, water bottles, etc.)</li>
+                                             <li><strong>EdTech Tools &   Gadgets  </strong>(Calculators, smart learning devices, etc.)</li>
+                                             
+                                        </ul>
+                                        <h6>If your business serves students, EEC is the ideal platform to scale your reach and grow your brand.</h6>
                                             </div>
                                           </div>
                                         </div>
@@ -106,9 +123,11 @@
                                                             </h2>
                                                             <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
                                                               <div class="accordion-body">
-                                                               <p>One-Stop Shopping – Students can buy all their school essentials in one place.</p>
-                                                                <p> Redeem & Save – EEC rewards students for their academic engagement, and these points can be used for discounts or free products.</p>
-                                                                <p>Exclusive Offers & Discounts – Students get access to vendor promotions, making education more affordable.</p>
+                                                              <ul>
+                                                               <li><strong>One-Stop Shopping</strong> – Students can buy all their school essentials in one place.</li>
+                                                                <li> <strong>Redeem & Save </strong>– EEC rewards students for their academic engagement, and these points can be used for discounts or free products.</li>
+                                                                <li><strong>Exclusive Offers & Discounts </strong>– Students get access to vendor promotions, making education more affordable.</li>
+                                                            </ul>
                                                               </div>
                                                             </div>
                                         </div>
@@ -120,10 +139,12 @@
                                                                            </h2>
                                                                            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
                                                                              <div class="accordion-body">
-                                                                              <p>Vendors Register & List Products – Sign up, upload your product catalog, and start selling.</p>
-                                                                              <p>Students Browse & Purchase – Students and parents explore products tailored for their educational needs.</p>
-                                                                              <p>Reward System Boosts Sales – Students can use their EEC reward points for discounts, driving higher conversion rates.</p>
-                                                                              <p>Hassle-Free Transactions & Delivery – Orders are processed efficiently, ensuring fast and reliable fulfillment.</p>
+                                                                                <ul>
+                                                                              <li><strong>vendors Register & List Products</strong> – Sign up, upload your product catalog, and start selling.</li>
+                                                                              <li><strong>Students Browse & Purchase</strong> – Students and parents explore products tailored for their educational needs.</li>
+                                                                              <li><strong>Reward System Boosts Sales</strong> – Students can use their EEC reward points for discounts, driving higher conversion rates.</li>
+                                                                              <li><strong>Hassle-Free Transactions & Delivery </strong>– Orders are processed efficiently, ensuring fast and reliable fulfillment.</li>
+                                                                            </ul>
                                                                              </div>
                                                                            </div>
                                                        </div>
@@ -135,10 +156,13 @@
                                                                            </h2>
                                                                            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
                                                                              <div class="accordion-body">
-                                                                              <p> ABC Stationery saw a 40% surge in sales within two months of joining EEC, thanks to our targeted student audience.</p>
-                                                                              <p>XYZ Publishers leveraged reward point redemptions to drive repeat purchases and brand loyalty.</p>
-                                                                              <p>duGadget Hub expanded nationwide, reaching students in tier-2 & tier-3 cities who previously lacked access to quality learning tools.</p>
+                                                                                <ul>
+                                                                              <li> ABC Stationery saw a 40% surge in sales within two months of joining EEC, thanks to our targeted student audience.</li>
+                                                                              <li>XYZ Publishers leveraged reward point redemptions to drive repeat purchases and brand loyalty.</li>
+                                                                              <li>EduGadget Hub expanded nationwide, reaching students in tier-2 & tier-3 cities who previously lacked access to quality learning tools.</li>
+                                                                            </ul>
                                                                               <h6>Join EEC today and become part of the largest education-focused marketplace in India. Sell smarter, grow faster, and empower students while scaling your business</h6>
+                                                                            
                                                                               <h6>Partner with EEC – Where Learning Meets Commerce!</h6>
                                                                              </div>
                                                                            </div>
@@ -333,9 +357,9 @@
   </footer> -->
 
 
-  <div class="footer-wrapper bg-light pt-4">
-    <footer class="container-fluid">
-        <div class="row px-3">
+  <div class="footer-wrapper bg-light pt-4" >
+    <footer class="container-fluid" style="padding-top: 20px;">
+        <div class="row px-3 ">
             <!-- Quick Links -->
             <div class="col-md-3">
                 <h5>Quick Links</h5>
